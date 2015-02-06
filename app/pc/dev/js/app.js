@@ -4,4 +4,4 @@
 
 //外部jsファイルを読み込み
 require('./module/config');
-require('./module/test');
+require('./module/select');

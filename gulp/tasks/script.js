@@ -43,8 +43,8 @@ function taskScripts(pathSrc,pathDest){
                     new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin("bower.json", ["main"])
                 ),
                 new webpack.optimize.CommonsChunkPlugin({
-                    name: "app",
-                    filename: "app.js"
+                    name: "library",
+                    filename: "library.js"
                 })
             ]
         }))
