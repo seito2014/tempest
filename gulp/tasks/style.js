@@ -23,9 +23,9 @@ function taskStyle(pathSrc,pathDest,guidePath) {
             out: './style-guide' + guidePath,
             css: '../../app' + guidePath +'/public/css/style.css',
             script: [
-                '../../app' + guidePath +'/public/js/lib/modernizer/modernizer.js',
-                '../../app' + guidePath +'/public/js/app.js',
-                '../../app' + guidePath +'/public/js/library.js'
+                '../../app' + guidePath +'/public/lib/modernizer/modernizr.js',
+                '../../app' + guidePath +'/public/js/library.js',
+                '../../app' + guidePath +'/public/js/app.js'
             ],
             clean: true
         }))
