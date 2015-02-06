@@ -1,0 +1,16 @@
+{
+  "name": "LIG plate",
+  "version": "0.0.0",
+  "authors": [
+    "堀口誠人 <horiguchi_seito@liginc.co.jp>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizer": "~2.8.2"
+  },
+  "devDependencies": {
+    "FlexSlider": "*",
+    "browser-os-hack": "*"
+  }
+}

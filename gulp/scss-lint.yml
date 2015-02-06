@@ -1,0 +1,42 @@
+linters:
+  Comment:
+    enabled: false
+
+  LeadingZero:
+    enabled: false
+
+  NameFormat:
+    convention: '^[a-z][-a-z0-9_]*$'
+
+  MergeableSelector:
+    force_nesting: false
+
+  PlaceholderInExtend:
+    enabled: false
+
+  PropertySortOrder:
+    enabled: false
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 4
+
+  Shorthand:
+    enabled: false
+
+  StringQuotes:
+    style: double_quotes
+
+  Indentation:
+    enabled: false
+    character: tab
+
+  VendorPrefixes:
+    enabled: false
+
+  DuplicateProperty:
+    enabled: false
+
+  SelectorFormat:
+    enabled: true
+    convention: snake_case

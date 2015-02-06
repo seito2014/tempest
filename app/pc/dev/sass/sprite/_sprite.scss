@@ -1,0 +1,26 @@
+/*
+#styleguide
+
+
+```
+<i class="sprite cart"></i>
+<i class="sprite dinner"></i>
+<i class="sprite watch"></i>
+```
+*/
+$cart: 0px 0px 0px 0px 256px 256px 514px 514px 'sprite.png';
+$dinner: 258px 0px -258px 0px 256px 256px 514px 514px 'sprite.png';
+$watch: 0px 258px 0px -258px 256px 256px 514px 514px 'sprite.png';
+
+.sprite{
+    display: inline-block;
+    &.cart {
+        @include sprite($cart);
+    }
+    &.dinner {
+        @include sprite($dinner);
+    }
+    &.watch {
+        @include sprite($watch);
+    }
+}
