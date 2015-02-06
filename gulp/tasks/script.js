@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     jshint = require('gulp-jshint'),
     gulpif = require('gulp-if'),
-    cache = require('gulp-cached');
+    changed  = require('gulp-changed');
 var webpack = require("webpack");
 var configPath = require('../config-path');
 var browser = require("browser-sync");
@@ -17,7 +17,7 @@ var min = !!(argv.min);
 
 function taskScripts(pathSrc,pathDest){
     return gulp.src(configPath.pc.script.src)
-        .pipe(cache('script'))
+        .pipe(changed(pathDest))
         .pipe(plumber())
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))

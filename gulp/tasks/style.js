@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     frontnote = require("gulp-frontnote"),
     gulpif = require('gulp-if'),
-    cache = require('gulp-cached');
+    changed  = require('gulp-changed');
 var configPath = require('../config-path');
 var browser = require("browser-sync");
 var argv = require('yargs').argv;
@@ -15,7 +15,7 @@ var min = !!(argv.min);
 
 function taskStyle(pathSrc,pathDest,guidePath) {
     return gulp.src(pathSrc)
-        .pipe(cache('style'))
+        .pipe(changed(pathDest))
         .pipe(plumber())
         .pipe(notify("Found file: <%= file.relative %>!"))
         .pipe(frontnote({
