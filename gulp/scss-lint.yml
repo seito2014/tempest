@@ -21,6 +21,10 @@ linters:
     enabled: true
     max_depth: 4
 
+  NestingDepth:
+    enabled: true
+    max_depth: 4
+
   Shorthand:
     enabled: false
 
