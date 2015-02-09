@@ -85,7 +85,10 @@ webpackJsonp([0],[
 	    var tabEffectTime;
 
 	    //セレクトの値変えられたら表示に反映
-	    $tabMenu.on('click', function () {
+	    $tabMenu.on('click', function (e) {
+
+	        e.preventDefault();
+
 	        var $this = $(this);
 
 	        clearTimeout(tabEffectTime);

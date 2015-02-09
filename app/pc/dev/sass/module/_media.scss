@@ -26,8 +26,8 @@ _card.scss
 */
 
 
-.card{
-    width: 200px;
+.media{
+    width: 100%;
     border: 1px solid #000;
 
     &-link{
@@ -37,16 +37,23 @@ _card.scss
         text-decoration: none;
 
         img {
+            float: left;
             display: block;
         }
     }
 
     &-inner{
+        @extend %clearfix;
         position: relative;
     }
     
     &-body{
         padding: 10px;
+        margin-left: 200px;
+        >time{
+            display: block;
+            margin-bottom: 5px;
+        }
     }
 
     &-heading{
@@ -71,6 +78,6 @@ _card.scss
     .tag{
         position: absolute;
         top: 0;
-        right: 0;
+        left: 0;
     }
 }

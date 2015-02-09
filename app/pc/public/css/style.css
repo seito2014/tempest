@@ -5,12 +5,12 @@
 /*
 * 変数用scss(カラーコード以外)
 */
-.header-inner, .contents-inner {
+.header-inner, .contents-inner, .media-inner {
   zoom: 1; }
-  .header-inner:before, .contents-inner:before, .header-inner:after, .contents-inner:after {
+  .header-inner:before, .contents-inner:before, .media-inner:before, .header-inner:after, .contents-inner:after, .media-inner:after {
     content: "";
     display: block; }
-  .header-inner:after, .contents-inner:after {
+  .header-inner:after, .contents-inner:after, .media-inner:after {
     clear: both; }
 
 body {
@@ -854,3 +854,64 @@ _card.scss
     position: absolute;
     top: 0;
     right: 0; }
+
+/*
+#overview
+card
+
+_card.scss
+*/
+/*
+#styleguide
+```
+<article class="card">
+    <a href="#" class="card-link">
+        <div class="card-inner">
+            <span class="tag tag-a">tag-a</span>
+            <img src="http://placehold.it/200x130" height="130" width="200" alt="">
+            <div class="card-body">
+                <h1 class="card-heading">
+                    急に充電したくなったらココ！おすすめ「電源の使...
+                </h1>
+                <p class="card-text">sample text sample text sample text sample text sample text sample text</p>
+            </div>
+        </div>
+    </a>
+</article>
+```
+*/
+.media {
+  width: 100%;
+  border: 1px solid #000; }
+  .media-link {
+    display: block;
+    background: #fff;
+    color: #000;
+    text-decoration: none; }
+    .media-link img {
+      float: left;
+      display: block; }
+  .media-inner {
+    position: relative; }
+  .media-body {
+    padding: 10px;
+    margin-left: 200px; }
+    .media-body > time {
+      display: block;
+      margin-bottom: 5px; }
+  .media-heading {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .media-text {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6; }
+  .media:hover .card-link {
+    background: #eee; }
+  .media .tag {
+    position: absolute;
+    top: 0;
+    left: 0; }
