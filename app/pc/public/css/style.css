@@ -464,9 +464,9 @@ body {
 .wrapper {
   width: 100%; }
 
-.for_old {
+.for-old {
   display: none; }
-  .lt_ie9 .for_old {
+  .lt-ie9 .for-old {
     display: block; }
 
 /*
@@ -588,6 +588,55 @@ body {
 /*
 * module
 */
+/*
+#overview
+select UI
+
+_select.scss
+select.js
+*/
+/*
+#styleguide
+```
+<div class="heading1">
+    <h1 class="heading-inner">heading</h1>
+</div>
+<div class="heading2">
+    <h2 class="heading-inner">heading</h2>
+</div>
+<div class="heading3">
+    <h3 class="heading-inner">heading</h3>
+</div>
+```
+*/
+.heading1 {
+  background-color: #F3F3F3;
+  padding: 10px; }
+  .heading1 .heading-inner {
+    font-size: 28px;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.6; }
+
+.heading2 {
+  padding: 10px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000; }
+  .heading2 .heading-inner {
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.6; }
+
+.heading3 .heading-inner {
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.6; }
+
 /*
 #overview
 select UI
