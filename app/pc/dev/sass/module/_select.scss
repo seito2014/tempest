@@ -10,15 +10,15 @@ select.js
 #styleguide
 
 ```
-<div class="select js_select">
-    <select name="select" class="select_inner">
+<div class="select js-select">
+    <select name="select" class="select-inner">
         <option value="">選択してください</option>
         <option value="select1">select1</option>
         <option value="select2">select2</option>
         <option value="select3">select3</option>
     </select>
-    <div class="select_text"></div>
-    <div class="select_arrow"></div>
+    <div class="select-text"></div>
+    <div class="select-arrow"></div>
 </div>
 ```
 */
@@ -30,7 +30,7 @@ select.js
     border: 1px solid #000;
     position: relative;
 
-    &_inner {
+    &-inner {
         display: block;
         width: 100%;
         height: 100%;
@@ -41,7 +41,7 @@ select.js
         z-index: 2;
     }
 
-    &_text {
+    &-text {
         @include rem(14);
         width: 100%;
         height: 100%;
@@ -52,7 +52,7 @@ select.js
         z-index: 1;
     }
 
-    &_arrow {
+    &-arrow {
         z-index: 3;
         position: absolute;
         top: 50%;

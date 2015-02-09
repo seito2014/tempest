@@ -12,9 +12,9 @@ var selectChange = function () {
 
     var currentText = DEFAULT_TEXT;
 
-    var $select = $('.js_select'),
-        $selectInner = $select.children('.select_inner'),
-        $selectText = $select.children('.select_text');
+    var $select = $('.js-select'),
+        $selectInner = $select.children('.select-inner'),
+        $selectText = $select.children('.select-text');
 
     //ロード時にセレクト内のテキストを表示
     $(window).on('load', function () {
