@@ -1,0 +1,57 @@
+/*
+#overview
+card
+
+_card.scss
+*/
+
+/*
+#styleguide
+```
+
+```
+*/
+
+
+.card{
+    width: 200px;
+    border: 1px solid #000;
+
+    &-link{
+        display: block;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+
+        img {
+            display: block;
+        }
+    }
+
+    &-inner{
+        position: relative;
+    }
+    
+    &-body{
+        padding: 10px;
+    }
+
+    &-heading{
+        @include rem(14);
+        line-height: 1.6;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    &-text{
+        @include rem(14);
+        line-height: 1.6;
+    }
+
+    &:hover {
+
+        .card-link{
+            background: #eee;
+        }
+    }
+}

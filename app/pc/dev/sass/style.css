@@ -681,10 +681,9 @@ body {
 */
 /*
 #overview
-select UI
+heading
 
-_select.scss
-select.js
+_heading.scss
 */
 /*
 #styleguide
@@ -730,7 +729,7 @@ select.js
 
 /*
 #overview
-select UI
+select
 
 _select.scss
 select.js
@@ -791,7 +790,7 @@ select.js
 
 /*
 #overview
-tab UI
+tab
 
 _tab.scss
 tab.js
@@ -865,5 +864,44 @@ tab.js
     opacity: 1; }
   .tab-area-content {
     padding: 10px; }
+
+/*
+#overview
+card
+
+_card.scss
+*/
+/*
+#styleguide
+```
+
+```
+*/
+.card {
+  width: 200px;
+  border: 1px solid #000; }
+  .card-link {
+    display: block;
+    background: #fff;
+    color: #000;
+    text-decoration: none; }
+    .card-link img {
+      display: block; }
+  .card-inner {
+    position: relative; }
+  .card-body {
+    padding: 10px; }
+  .card-heading {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .card-text {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6; }
+  .card:hover .card-link {
+    background: #eee; }
 
 /*# sourceMappingURL=style.css.map */
