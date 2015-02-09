@@ -9,8 +9,7 @@ var selectChange = function () {
     'use strict';
 
     var $tab = $('.js-tab'),
-        $tabMenu = $tab.find('.tab-menu').find('a'),
-        $tabAreas = $tab.find('.tab-areas');
+        $tabMenu = $tab.find('.tab-menu').find('a');
 
     var tabEffectTime;
 
@@ -36,7 +35,7 @@ var selectChange = function () {
 
         //areaの高さ調整
         var areaHeight = $(target).height();
-        $tabAreas.css('height',areaHeight);
+        $(target).parent().css('height',areaHeight);
 
     });
 }();
