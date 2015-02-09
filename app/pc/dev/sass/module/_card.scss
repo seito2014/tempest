@@ -8,7 +8,20 @@ _card.scss
 /*
 #styleguide
 ```
-
+<article class="card">
+    <a href="#" class="card-link">
+        <div class="card-inner">
+            <span class="tag tag-a">tag-a</span>
+            <img src="http://placehold.it/200x130" height="130" width="200" alt="">
+            <div class="card-body">
+                <h1 class="card-heading">
+                    急に充電したくなったらココ！おすすめ「電源の使...
+                </h1>
+                <p class="card-text">sample text sample text sample text sample text sample text sample text</p>
+            </div>
+        </div>
+    </a>
+</article>
 ```
 */
 
@@ -53,5 +66,11 @@ _card.scss
         .card-link{
             background: #eee;
         }
+    }
+
+    .tag{
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
