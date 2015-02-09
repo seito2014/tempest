@@ -26,7 +26,7 @@ module.exports = {
         sprite:{
             src: DEV_PC + '/image/sprite/src/**/*.png',
             destImage: DEV_PC + '/image/sprite/dest',
-            destStyle: DEV_PC + '/sass/module'
+            destStyle: DEV_PC + '/sass/sprite'
         },
         script: {
             src: DEV_PC + '/js/**/*',
