@@ -2,9 +2,9 @@
  require:false,
  module:false
  */
-/* exported config,module */
+/* exported config,module,require */
 
-var selectChange = function () {
+var selectWork = (function () {
 
     'use strict';
 
@@ -27,6 +27,6 @@ var selectChange = function () {
         currentText = ($this.val() === '') ? DEFAULT_TEXT : $this.val();
         $selectText.html(currentText);
     });
-}();
+}());
 
-module.exports = selectChange;
+module.exports = selectWork;

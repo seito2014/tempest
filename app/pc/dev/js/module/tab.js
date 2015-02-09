@@ -1,10 +1,10 @@
 /*global
  require:false,
  module:false
- */
-/* exported config,module */
+*/
+/* exported config,module,require */
 
-var selectChange = function () {
+var tabWork = (function () {
 
     'use strict';
 
@@ -38,6 +38,6 @@ var selectChange = function () {
         $(target).parent().css('height',areaHeight);
 
     });
-}();
+}());
 
-module.exports = selectChange;
+module.exports = tabWork;

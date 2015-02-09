@@ -36,9 +36,9 @@ webpackJsonp([0],[
 	 require:false,
 	 module:false
 	 */
-	/* exported config,module */
+	/* exported config,module,require */
 
-	var selectChange = function () {
+	var selectWork = (function () {
 
 	    'use strict';
 
@@ -61,9 +61,9 @@ webpackJsonp([0],[
 	        currentText = ($this.val() === '') ? DEFAULT_TEXT : $this.val();
 	        $selectText.html(currentText);
 	    });
-	}();
+	}());
 
-	module.exports = selectChange;
+	module.exports = selectWork;
 
 /***/ },
 /* 3 */
@@ -72,10 +72,10 @@ webpackJsonp([0],[
 	/*global
 	 require:false,
 	 module:false
-	 */
-	/* exported config,module */
+	*/
+	/* exported config,module,require */
 
-	var selectChange = function () {
+	var tabWork = (function () {
 
 	    'use strict';
 
@@ -109,9 +109,9 @@ webpackJsonp([0],[
 	        $(target).parent().css('height',areaHeight);
 
 	    });
-	}();
+	}());
 
-	module.exports = selectChange;
+	module.exports = tabWork;
 
 /***/ }
 ]);
