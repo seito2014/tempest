@@ -1,0 +1,1027 @@
+@charset "UTF-8";
+/*
+* base
+*/
+/*
+* 変数用scss(カラーコード以外)
+*/
+.header-inner, .contents-inner, .media-inner {
+  zoom: 1; }
+  .header-inner:before, .contents-inner:before, .media-inner:before, .header-inner:after, .contents-inner:after, .media-inner:after {
+    content: "";
+    display: block; }
+  .header-inner:after, .contents-inner:after, .media-inner:after {
+    clear: both; }
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  line-height: 1;
+  word-break: break-all; }
+
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: baseline;
+  background: transparent; }
+
+img {
+  vertical-align: bottom; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+div,
+address,
+iframe,
+canvas,
+hr,
+textarea {
+  display: block;
+  line-height: 1; }
+
+iframe {
+  max-width: 100% !important; }
+
+img,
+embed,
+object,
+video {
+  max-width: 100%; }
+
+a,
+label {
+  cursor: pointer; }
+
+blockquote {
+  padding: 0;
+  margin: 0;
+  display: block; }
+
+address,
+em {
+  font-style: normal; }
+
+hr {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+ul,
+ol,
+li {
+  list-style: none; }
+
+textarea {
+  resize: vertical;
+  overflow: hidden;
+  -webkit-appearance: none;
+  border: 0; }
+
+input,
+button,
+select {
+  vertical-align: middle;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-appearance: none; }
+
+table {
+  border-collapse: collapse; }
+
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  line-height: 1; }
+
+.u_mt0 {
+  margin-top: 0px !important; }
+
+.u_mr0 {
+  margin-right: 0px !important; }
+
+.u_mb0 {
+  margin-bottom: 0px !important; }
+
+.u_ml0 {
+  margin-left: 0px !important; }
+
+.u_pt0 {
+  padding-top: 0px !important; }
+
+.u_pr0 {
+  padding-right: 0px !important; }
+
+.u_pb0 {
+  padding-bottom: 0px !important; }
+
+.u_pl0 {
+  padding-left: 0px !important; }
+
+.u_mt5 {
+  margin-top: 5px !important; }
+
+.u_mr5 {
+  margin-right: 5px !important; }
+
+.u_mb5 {
+  margin-bottom: 5px !important; }
+
+.u_ml5 {
+  margin-left: 5px !important; }
+
+.u_pt5 {
+  padding-top: 5px !important; }
+
+.u_pr5 {
+  padding-right: 5px !important; }
+
+.u_pb5 {
+  padding-bottom: 5px !important; }
+
+.u_pl5 {
+  padding-left: 5px !important; }
+
+.u_mt10 {
+  margin-top: 10px !important; }
+
+.u_mr10 {
+  margin-right: 10px !important; }
+
+.u_mb10 {
+  margin-bottom: 10px !important; }
+
+.u_ml10 {
+  margin-left: 10px !important; }
+
+.u_pt10 {
+  padding-top: 10px !important; }
+
+.u_pr10 {
+  padding-right: 10px !important; }
+
+.u_pb10 {
+  padding-bottom: 10px !important; }
+
+.u_pl10 {
+  padding-left: 10px !important; }
+
+.u_mt15 {
+  margin-top: 15px !important; }
+
+.u_mr15 {
+  margin-right: 15px !important; }
+
+.u_mb15 {
+  margin-bottom: 15px !important; }
+
+.u_ml15 {
+  margin-left: 15px !important; }
+
+.u_pt15 {
+  padding-top: 15px !important; }
+
+.u_pr15 {
+  padding-right: 15px !important; }
+
+.u_pb15 {
+  padding-bottom: 15px !important; }
+
+.u_pl15 {
+  padding-left: 15px !important; }
+
+.u_mt20 {
+  margin-top: 20px !important; }
+
+.u_mr20 {
+  margin-right: 20px !important; }
+
+.u_mb20 {
+  margin-bottom: 20px !important; }
+
+.u_ml20 {
+  margin-left: 20px !important; }
+
+.u_pt20 {
+  padding-top: 20px !important; }
+
+.u_pr20 {
+  padding-right: 20px !important; }
+
+.u_pb20 {
+  padding-bottom: 20px !important; }
+
+.u_pl20 {
+  padding-left: 20px !important; }
+
+.u_mt25 {
+  margin-top: 25px !important; }
+
+.u_mr25 {
+  margin-right: 25px !important; }
+
+.u_mb25 {
+  margin-bottom: 25px !important; }
+
+.u_ml25 {
+  margin-left: 25px !important; }
+
+.u_pt25 {
+  padding-top: 25px !important; }
+
+.u_pr25 {
+  padding-right: 25px !important; }
+
+.u_pb25 {
+  padding-bottom: 25px !important; }
+
+.u_pl25 {
+  padding-left: 25px !important; }
+
+.u_mt30 {
+  margin-top: 30px !important; }
+
+.u_mr30 {
+  margin-right: 30px !important; }
+
+.u_mb30 {
+  margin-bottom: 30px !important; }
+
+.u_ml30 {
+  margin-left: 30px !important; }
+
+.u_pt30 {
+  padding-top: 30px !important; }
+
+.u_pr30 {
+  padding-right: 30px !important; }
+
+.u_pb30 {
+  padding-bottom: 30px !important; }
+
+.u_pl30 {
+  padding-left: 30px !important; }
+
+.u_mt35 {
+  margin-top: 35px !important; }
+
+.u_mr35 {
+  margin-right: 35px !important; }
+
+.u_mb35 {
+  margin-bottom: 35px !important; }
+
+.u_ml35 {
+  margin-left: 35px !important; }
+
+.u_pt35 {
+  padding-top: 35px !important; }
+
+.u_pr35 {
+  padding-right: 35px !important; }
+
+.u_pb35 {
+  padding-bottom: 35px !important; }
+
+.u_pl35 {
+  padding-left: 35px !important; }
+
+.u_mt40 {
+  margin-top: 40px !important; }
+
+.u_mr40 {
+  margin-right: 40px !important; }
+
+.u_mb40 {
+  margin-bottom: 40px !important; }
+
+.u_ml40 {
+  margin-left: 40px !important; }
+
+.u_pt40 {
+  padding-top: 40px !important; }
+
+.u_pr40 {
+  padding-right: 40px !important; }
+
+.u_pb40 {
+  padding-bottom: 40px !important; }
+
+.u_pl40 {
+  padding-left: 40px !important; }
+
+.u_mt45 {
+  margin-top: 45px !important; }
+
+.u_mr45 {
+  margin-right: 45px !important; }
+
+.u_mb45 {
+  margin-bottom: 45px !important; }
+
+.u_ml45 {
+  margin-left: 45px !important; }
+
+.u_pt45 {
+  padding-top: 45px !important; }
+
+.u_pr45 {
+  padding-right: 45px !important; }
+
+.u_pb45 {
+  padding-bottom: 45px !important; }
+
+.u_pl45 {
+  padding-left: 45px !important; }
+
+.u_mt50 {
+  margin-top: 50px !important; }
+
+.u_mr50 {
+  margin-right: 50px !important; }
+
+.u_mb50 {
+  margin-bottom: 50px !important; }
+
+.u_ml50 {
+  margin-left: 50px !important; }
+
+.u_pt50 {
+  padding-top: 50px !important; }
+
+.u_pr50 {
+  padding-right: 50px !important; }
+
+.u_pb50 {
+  padding-bottom: 50px !important; }
+
+.u_pl50 {
+  padding-left: 50px !important; }
+
+.u_mt55 {
+  margin-top: 55px !important; }
+
+.u_mr55 {
+  margin-right: 55px !important; }
+
+.u_mb55 {
+  margin-bottom: 55px !important; }
+
+.u_ml55 {
+  margin-left: 55px !important; }
+
+.u_pt55 {
+  padding-top: 55px !important; }
+
+.u_pr55 {
+  padding-right: 55px !important; }
+
+.u_pb55 {
+  padding-bottom: 55px !important; }
+
+.u_pl55 {
+  padding-left: 55px !important; }
+
+.u_mt60 {
+  margin-top: 60px !important; }
+
+.u_mr60 {
+  margin-right: 60px !important; }
+
+.u_mb60 {
+  margin-bottom: 60px !important; }
+
+.u_ml60 {
+  margin-left: 60px !important; }
+
+.u_pt60 {
+  padding-top: 60px !important; }
+
+.u_pr60 {
+  padding-right: 60px !important; }
+
+.u_pb60 {
+  padding-bottom: 60px !important; }
+
+.u_pl60 {
+  padding-left: 60px !important; }
+
+.u_mt65 {
+  margin-top: 65px !important; }
+
+.u_mr65 {
+  margin-right: 65px !important; }
+
+.u_mb65 {
+  margin-bottom: 65px !important; }
+
+.u_ml65 {
+  margin-left: 65px !important; }
+
+.u_pt65 {
+  padding-top: 65px !important; }
+
+.u_pr65 {
+  padding-right: 65px !important; }
+
+.u_pb65 {
+  padding-bottom: 65px !important; }
+
+.u_pl65 {
+  padding-left: 65px !important; }
+
+.u_mt70 {
+  margin-top: 70px !important; }
+
+.u_mr70 {
+  margin-right: 70px !important; }
+
+.u_mb70 {
+  margin-bottom: 70px !important; }
+
+.u_ml70 {
+  margin-left: 70px !important; }
+
+.u_pt70 {
+  padding-top: 70px !important; }
+
+.u_pr70 {
+  padding-right: 70px !important; }
+
+.u_pb70 {
+  padding-bottom: 70px !important; }
+
+.u_pl70 {
+  padding-left: 70px !important; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  min-height: 100%; }
+
+body {
+  font-size: 14px;
+  line-height: 1; }
+
+.wrapper {
+  width: 100%; }
+
+.for-old {
+  display: none; }
+  .lt-ie9 .for-old {
+    display: block; }
+
+/*
+* layout
+*/
+.header {
+  width: 100%; }
+
+.header-inner {
+  width: 980px;
+  height: 80px;
+  margin: 0 auto;
+  background: #eee;
+  padding: 10px; }
+
+.header-logo {
+  float: left;
+  width: 200px;
+  height: 60px;
+  background: #fff; }
+
+.header-module {
+  float: right;
+  width: 150px;
+  height: 60px;
+  background: #fff;
+  margin-left: 10px; }
+
+.footer {
+  width: 100%; }
+
+.footer-inner {
+  width: 980px;
+  height: 80px;
+  margin: 0 auto;
+  background: #eee;
+  text-align: center; }
+  .footer-inner > small {
+    display: inline-block;
+    height: 80px;
+    line-height: 80px; }
+
+.contents {
+  width: 100%;
+  margin: 30px 0; }
+
+.contents-inner {
+  width: 980px;
+  margin: 0 auto; }
+
+.main {
+  float: left;
+  width: 70%;
+  background: #eee;
+  min-height: 600px; }
+
+.side {
+  float: right;
+  width: 25%;
+  background: #eee;
+  min-height: 600px; }
+
+/*
+* sprite
+*/
+/*
+#styleguide
+
+
+```
+<i class="sprite cart"></i>
+<i class="sprite dinner"></i>
+<i class="sprite watch"></i>
+```
+*/
+.sprite {
+  display: inline-block; }
+  .sprite.cart {
+    background-image: url(../image/sprite/dest/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 256px;
+    height: 256px;
+    background-size: 514px 514px; }
+  .sprite.dinner {
+    background-image: url(../image/sprite/dest/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -258px 0px;
+    width: 256px;
+    height: 256px;
+    background-size: 514px 514px; }
+  .sprite.watch {
+    background-image: url(../image/sprite/dest/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0px -258px;
+    width: 256px;
+    height: 256px;
+    background-size: 514px 514px; }
+
+/*
+* page
+*/
+.index {
+  transform: opacify 0.5s;
+  font-size: 1.2rem;
+  text-align: left; }
+
+.main-visual {
+  width: 100%;
+  margin-top: 30px; }
+  .main-visual-inner {
+    width: 980px;
+    margin: 0 auto; }
+    .main-visual-inner > img {
+      width: 100%;
+      height: auto; }
+
+/*
+* module
+*/
+/*
+#overview
+heading
+
+_heading.scss
+*/
+/*
+#styleguide
+```
+<div class="heading1">
+    <h1 class="heading-inner">heading</h1>
+</div>
+<div class="heading2">
+    <h2 class="heading-inner">heading</h2>
+</div>
+<div class="heading3">
+    <h3 class="heading-inner">heading</h3>
+</div>
+```
+*/
+.heading1 {
+  background-color: #eee;
+  padding: 10px; }
+  .heading1 .heading-inner {
+    font-size: 28px;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.6; }
+
+.heading2 {
+  padding: 10px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000; }
+  .heading2 .heading-inner {
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.6; }
+
+.heading3 .heading-inner {
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.6; }
+
+/*
+#overview
+select
+
+_select.scss
+select.js
+*/
+/*
+#styleguide
+```
+<div class="select js-select">
+    <select name="select" class="select-inner">
+        <option value="">選択してください</option>
+        <option value="select1">select1</option>
+        <option value="select2">select2</option>
+        <option value="select3">select3</option>
+    </select>
+    <div class="select-text"></div>
+    <div class="select-arrow"></div>
+</div>
+```
+*/
+.select {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #000;
+  position: relative; }
+  .select-inner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2; }
+  .select-text {
+    font-size: 14px;
+    font-size: 1.4rem;
+    width: 100%;
+    height: 100%;
+    padding: 12px 15px;
+    color: #000;
+    line-height: 1;
+    position: relative;
+    z-index: 1; }
+  .select-arrow {
+    display: block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    transform: rotate(135deg);
+    z-index: 3; }
+
+/*
+#overview
+tab
+
+_tab.scss
+tab.js
+*/
+/*
+#styleguide
+```
+<div class="tab js-tab">
+    <ul class="tab-menus">
+        <li class="tab-menu">
+            <a href="#tab-area1" data-tab-name=".js-tab-group1" class="js-tab-group1 is-active">tab1</a>
+        </li>
+        <li class="tab-menu">
+            <a href="#tab-area2" data-tab-name=".js-tab-group1" class="js-tab-group1">tab2</a>
+        </li>
+        <li class="tab-menu">
+            <a href="#tab-area3" data-tab-name=".js-tab-group1" class="js-tab-group1">tab3</a>
+        </li>
+    </ul>
+    <div class="tab-areas">
+        <div class="tab-area js-tab-group1 is-active" id="tab-area1">
+            <div class="tab-area-content">
+                areaの意味や和訳。 【名詞】1【不可算名詞】 [具体的には 【可算名詞】] 面積.用例the area of a square [triangle] 正方形[三角形]の面積.It's 100 square miles i... - 約983万語ある英和辞典・和英辞典。発音・イディオムも ...
+            </div>
+        </div>
+        <div class="tab-area js-tab-group1" id="tab-area2">
+            <div class="tab-area-content">
+                areaとは。意味や和訳。[名]1 地域，地帯，区域，地方；（特定の用途にあてた）区域，場所.
+            </div>
+        </div>
+        <div class="tab-area js-tab-group1" id="tab-area3">
+            <div class="tab-area-content">
+                area 【名】 〔地表上の〕地域、地帯、地方、地区◇【同】region 〔特定の目的に... - アルクがお届けする進化するオンライン英和・ ...
+            </div>
+        </div>
+    </div>
+</div>
+```
+*/
+.tab-menus {
+  letter-spacing: -.4em; }
+.tab-menu {
+  display: inline-block;
+  letter-spacing: normal;
+  width: 33.33%; }
+  .tab-menu > a {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    background: #fff;
+    text-decoration: none; }
+    .tab-menu > a.is-active {
+      background: #000;
+      color: #fff; }
+.tab-areas {
+  background: #eee;
+  position: relative; }
+.tab-area {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.35s; }
+  .tab-area.is-active {
+    display: block;
+    position: static;
+    opacity: 1; }
+  .tab-area-content {
+    padding: 10px; }
+
+/*
+#overview
+tag
+
+_tag.scss
+*/
+/*
+#styleguide
+```
+
+```
+*/
+.tag {
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  padding: 5px; }
+  .tag-a {
+    background: #9c52ff; }
+  .tag-b {
+    background: #f00; }
+  .tag-c {
+    background: #0e76a8; }
+
+/*
+#overview
+card
+
+_card.scss
+*/
+/*
+#styleguide
+```
+<article class="card">
+    <a href="#" class="card-link">
+        <div class="card-inner">
+            <span class="tag tag-a">tag-a</span>
+            <img src="http://placehold.it/200x130" height="130" width="200" alt="">
+            <div class="card-body">
+                <h1 class="card-heading">
+                    急に充電したくなったらココ！おすすめ「電源の使...
+                </h1>
+                <p class="card-text">sample text sample text sample text sample text sample text sample text</p>
+            </div>
+        </div>
+    </a>
+</article>
+```
+*/
+.card {
+  width: 200px;
+  border: 1px solid #000; }
+  .card-link {
+    display: block;
+    background: #fff;
+    color: #000;
+    text-decoration: none; }
+    .card-link img {
+      display: block; }
+  .card-inner {
+    position: relative; }
+  .card-body {
+    padding: 10px; }
+  .card-heading {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .card-text {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6; }
+  .card:hover .card-link {
+    background: #eee; }
+  .card .tag {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+/*
+#overview
+card
+
+_card.scss
+*/
+/*
+#styleguide
+```
+<article class="card">
+    <a href="#" class="card-link">
+        <div class="card-inner">
+            <span class="tag tag-a">tag-a</span>
+            <img src="http://placehold.it/200x130" height="130" width="200" alt="">
+            <div class="card-body">
+                <h1 class="card-heading">
+                    急に充電したくなったらココ！おすすめ「電源の使...
+                </h1>
+                <p class="card-text">sample text sample text sample text sample text sample text sample text</p>
+            </div>
+        </div>
+    </a>
+</article>
+```
+*/
+.media {
+  width: 100%;
+  border: 1px solid #000; }
+  .media-link {
+    display: block;
+    background: #fff;
+    color: #000;
+    text-decoration: none; }
+    .media-link img {
+      float: left;
+      display: block; }
+  .media-inner {
+    position: relative; }
+  .media-body {
+    padding: 10px;
+    margin-left: 200px; }
+    .media-body > time {
+      display: block;
+      margin-bottom: 5px; }
+  .media-heading {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .media-text {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6; }
+  .media:hover .card-link {
+    background: #eee; }
+  .media .tag {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+/*
+#overview
+button
+
+_button.scss
+*/
+/*
+#styleguide
+```
+
+```
+*/
+.button {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

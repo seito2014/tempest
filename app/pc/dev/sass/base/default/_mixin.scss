@@ -1,24 +1,21 @@
-@mixin arrow($width,$height,$borderWidth,$borderColor,$top,$right,$aim){
+@mixin arrow($width, $height, $border-width, $border-color, $top, $right, $aim) {
     display: block;
     content: "";
     width: $width + px;
     height: $height + px;
-    border-top: ($borderWidth + px) solid $borderColor;
-    border-right: ($borderWidth + px) solid $borderColor;
+    border-top: ($border-width + px) solid $border-color;
+    border-right: ($border-width + px) solid $border-color;
     position: absolute;
     top: $top + px;
     right: $right + px;
 
-    @if $aim == 'top'{
+    @if $aim == "top" {
         transform: rotate(-45deg);
-    }
-    @else if $aim == 'right'{
+    } @else if $aim == "right" {
         transform: rotate(45deg);
-    }
-    @else if $aim == 'bottom'{
+    } @else if $aim == "bottom" {
         transform: rotate(135deg);
-    }
-    @else if $aim == 'left'{
+    } @else if $aim == "left" {
         transform: rotate(-135deg);
     }
 }

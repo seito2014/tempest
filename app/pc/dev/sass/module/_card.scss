@@ -25,12 +25,11 @@ _card.scss
 ```
 */
 
-
-.card{
+.card {
     width: 200px;
     border: 1px solid #000;
 
-    &-link{
+    &-link {
         display: block;
         background: #fff;
         color: #000;
@@ -41,34 +40,34 @@ _card.scss
         }
     }
 
-    &-inner{
+    &-inner {
         position: relative;
     }
-    
-    &-body{
+
+    &-body {
         padding: 10px;
     }
 
-    &-heading{
+    &-heading {
         @include rem(14);
         line-height: 1.6;
         font-weight: bold;
         margin-bottom: 5px;
     }
 
-    &-text{
+    &-text {
         @include rem(14);
         line-height: 1.6;
     }
 
     &:hover {
 
-        .card-link{
+        .card-link {
             background: #eee;
         }
     }
 
-    .tag{
+    .tag {
         position: absolute;
         top: 0;
         right: 0;

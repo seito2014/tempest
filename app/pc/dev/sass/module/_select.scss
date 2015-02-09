@@ -52,7 +52,7 @@ select.js
     }
 
     &-arrow {
+        @include arrow(8, 8, 1, #000, 12, 15, bottom);
         z-index: 3;
-        @include arrow(8,8,1,#000,12,15,bottom);
     }
 }
