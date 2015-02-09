@@ -53,16 +53,6 @@ select.js
 
     &-arrow {
         z-index: 3;
-        position: absolute;
-        top: 50%;
-        right: 15px;
-        display: block;
-        content: "";
-        width: 8px;
-        height: 8px;
-        margin-top: -6px;
-        border-top: 1px solid #000;
-        border-right: 1px solid #000;
-        transform: rotate(135deg);
+        @include arrow(8,8,1,#000,12,15,bottom);
     }
 }

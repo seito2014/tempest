@@ -1,3 +1,28 @@
+@mixin arrow($width,$height,$borderWidth,$borderColor,$top,$right,$aim){
+    display: block;
+    content: "";
+    width: $width + px;
+    height: $height + px;
+    border-top: ($borderWidth + px) solid $borderColor;
+    border-right: ($borderWidth + px) solid $borderColor;
+    position: absolute;
+    top: $top + px;
+    right: $right + px;
+
+    @if $aim == 'top'{
+        transform: rotate(-45deg);
+    }
+    @else if $aim == 'right'{
+        transform: rotate(45deg);
+    }
+    @else if $aim == 'bottom'{
+        transform: rotate(135deg);
+    }
+    @else if $aim == 'left'{
+        transform: rotate(-135deg);
+    }
+}
+
 @mixin rem($size, $base: 10) {
     font-size: $size + px;
     font-size: ($size / $base) + rem;

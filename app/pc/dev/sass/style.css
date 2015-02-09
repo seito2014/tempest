@@ -776,16 +776,15 @@ select.js
     z-index: 1; }
   .select-arrow {
     z-index: 3;
-    position: absolute;
-    top: 50%;
-    right: 15px;
     display: block;
     content: "";
     width: 8px;
     height: 8px;
-    margin-top: -6px;
     border-top: 1px solid #000;
     border-right: 1px solid #000;
+    position: absolute;
+    top: 12px;
+    right: 15px;
     transform: rotate(135deg); }
 
 /*
