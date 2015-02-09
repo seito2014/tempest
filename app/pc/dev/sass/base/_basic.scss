@@ -16,10 +16,10 @@ body {
     width: 100%;
 }
 
-.for_old {
+.for-old {
     display: none;
 
-    .lt_ie9 & {
+    .lt-ie9 & {
         display: block;
     }
 }

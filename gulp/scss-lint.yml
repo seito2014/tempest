@@ -43,4 +43,3 @@ linters:
 
   SelectorFormat:
     enabled: true
-    convention: snake_case
