@@ -2,7 +2,15 @@
 #colors
 
 
-@primary #996600
+@default #423f3d
+@base #4ac8bb
+@accent #e4c789
+
+@sub1 #f9e2ca
+
+@category-a $accent
+@category-b #ae9adc
+@category-c #7fc6a2
 */
 
 $default:#423f3d;
@@ -14,8 +22,3 @@ $sub1:#f9e2ca;
 $category-a:$accent;
 $category-b:#ae9adc;
 $category-c:#7fc6a2;
-$category-d:#88c1ed;
-$category-e:#f3ad9d;
-$category-f:#febf51;
-$category-g:#a7d55f;
-$category-h:#ecabd1;
