@@ -24,7 +24,74 @@ body {
   line-height: 1;
   word-break: break-all; }
 
-div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video, input, textarea {
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input,
+textarea {
   margin: 0;
   padding: 0;
   border: 0;
@@ -37,7 +104,22 @@ div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, add
 img {
   vertical-align: bottom; }
 
-article, aside, details, figcaption, figure, footer, header, menu, nav, section, div, address, iframe, canvas, hr, textarea {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+div,
+address,
+iframe,
+canvas,
+hr,
+textarea {
   display: block;
   line-height: 1; }
 
@@ -47,7 +129,8 @@ iframe {
 img, embed, object, video {
   max-width: 100%; }
 
-a, label {
+a,
+label {
   cursor: pointer; }
 
 blockquote {
@@ -55,7 +138,8 @@ blockquote {
   margin: 0;
   display: block; }
 
-address, em {
+address,
+em {
   font-style: normal; }
 
 hr {
@@ -63,7 +147,9 @@ hr {
   margin: 0;
   padding: 0; }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none; }
 
 textarea {
@@ -72,7 +158,9 @@ textarea {
   -webkit-appearance: none;
   border: 0; }
 
-input, button, select {
+input,
+button,
+select {
   vertical-align: middle;
   border-radius: 0;
   border: 0;
@@ -85,7 +173,8 @@ input, button, select {
 table {
   border-collapse: collapse; }
 
-*:before, *:after {
+*:before,
+*:after {
   padding: 0;
   margin: 0;
   line-height: 1; }
@@ -570,7 +659,6 @@ body {
 * page
 */
 .index {
-  -webkit-transform: opacify 0.5s;
   transform: opacify 0.5s;
   font-size: 1.2rem;
   text-align: left; }
@@ -649,7 +737,6 @@ select.js
     margin-top: -6px;
     border-top: 1px solid #000;
     border-right: 1px solid #000;
-    -webkit-transform: rotate(135deg);
     transform: rotate(135deg); }
 
 /*
@@ -694,10 +781,12 @@ tab.js
   position: absolute;
   top: 0;
   left: 0;
-  transition: opacity 0.35s; }
+  transition: opacity; }
   .tab-area.is-active {
     display: block;
     position: static;
     opacity: 1; }
   .tab-area-content {
     padding: 10px; }
+
+/*# sourceMappingURL=style.css.map */

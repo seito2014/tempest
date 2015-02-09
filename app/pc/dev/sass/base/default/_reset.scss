@@ -116,6 +116,10 @@ iframe {
     max-width: 100% !important;
 }
 
+img, embed, object, video {
+    max-width: 100%;
+}
+
 a,
 label {
     cursor: pointer;

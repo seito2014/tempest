@@ -1,0 +1,67 @@
+/*
+#overview
+tab UI
+
+_tab.scss
+tab.js
+*/
+
+/*
+#styleguide
+
+
+```
+
+```
+*/
+
+.tab {
+    &-menus {
+        letter-spacing: -.4em;
+    }
+
+    &-menu {
+        display: inline-block;
+        letter-spacing: normal;
+        width: 33.33%;
+
+        > a {
+            display: block;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #000;
+            background: #fff;
+            text-decoration: none;
+
+            &.is-active{
+                background: #000;
+                color: #fff;
+            }
+        }
+    }
+
+    &-areas{
+        background: #eee;
+        position: relative;
+    }
+
+    &-area{
+        display: none;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 0.35s;
+        &.is-active{
+            display: block;
+            position: static;
+            opacity: 1;
+        }
+
+        &-content{
+            padding: 10px;
+        }
+    }
+}
