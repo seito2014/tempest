@@ -550,8 +550,10 @@ html {
   min-height: 100%; }
 
 body {
-  font-size: 14px;
-  line-height: 1; }
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
 
 .wrapper {
   width: 100%; }

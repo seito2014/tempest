@@ -458,8 +458,10 @@ html {
   min-height: 100%; }
 
 body {
-  font-size: 14px;
-  line-height: 1; }
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
 
 .wrapper {
   width: 100%; }
@@ -609,7 +611,7 @@ _heading.scss
 ```
 */
 .heading1 {
-  background-color: #F3F3F3;
+  background-color: #eee;
   padding: 10px; }
   .heading1 .heading-inner {
     font-size: 28px;
@@ -684,7 +686,6 @@ select.js
     position: relative;
     z-index: 1; }
   .select-arrow {
-    z-index: 3;
     display: block;
     content: "";
     width: 8px;
@@ -695,7 +696,8 @@ select.js
     top: 12px;
     right: 15px;
     -webkit-transform: rotate(135deg);
-    transform: rotate(135deg); }
+    transform: rotate(135deg);
+    z-index: 3; }
 
 /*
 #overview
@@ -792,9 +794,9 @@ _tag.scss
   background: #000;
   padding: 5px; }
   .tag-a {
-    background: #9C52FF; }
+    background: #9c52ff; }
   .tag-b {
-    background: #FF0000; }
+    background: #f00; }
   .tag-c {
     background: #0e76a8; }
 

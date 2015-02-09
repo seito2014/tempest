@@ -8,8 +8,9 @@ html {
 }
 
 body {
-    font-size: 14px;
+    @include rem(15);
     line-height: 1;
+    font-family: $font;
 }
 
 .wrapper {

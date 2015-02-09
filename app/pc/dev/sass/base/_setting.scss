@@ -3,13 +3,16 @@
 */
 
 //path
-$path_image:"../image/";
-$path_sprite:"../image/sprite/dest/";
+$path-image:"../image/";
+$path-sprite:"../image/sprite/dest/";
 
 // clum width
 $gutter: 0;
-$size_max: 980px;
-$size_min: 320px;
+$size-max: 980px;
+$size-min: 320px;
 
 // scale (sprite生成で使用)
 $default-scale:1;
+
+//font
+$font:"Hiragino Kaku Gothic ProN", Meiryo, sans-serif;

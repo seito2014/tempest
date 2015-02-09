@@ -5,6 +5,6 @@
 
 .contents-inner {
     @extend %clearfix;
-    width: $size_max; //setting.scssに記述
+    width: $size-max; //setting.scssに記述
     margin: 0 auto;
 }
