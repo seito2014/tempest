@@ -14,3 +14,10 @@ gulp.task('watch-pc', function () {
 gulp.task('default', ['server-pc','watch-pc','ejs-pc','style-pc','script-pc','image-pc','copy-pc'], function() {});
 
 //watch sp
+gulp.task('watch-sp', function () {
+    gulp.watch(configPath.sp.html.src,['ejs-sp']);
+    gulp.watch(configPath.sp.style.src,['style-sp']);
+    gulp.watch(configPath.sp.script.src,['script-sp']);
+    gulp.watch(configPath.sp.image.src,['image-sp']);
+});
+gulp.task('sp', ['server-sp','watch-sp','ejs-sp','style-sp','script-sp','image-sp','copy-sp'], function() {});

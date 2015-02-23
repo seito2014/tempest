@@ -5,22 +5,30 @@ var gulp = require('gulp'),
 var configPath = require('../config-path');
 var browser = require("browser-sync");
 
-function copyLib(pathSrc,pathDest) {
+function copy(pathSrc,pathDest) {
     return gulp.src(pathSrc)
         .pipe(gulp.dest(pathDest))
         .pipe(browser.reload({stream: true}));
 }
 
 gulp.task('copy-pc', function () {
-    copyLib(
+    copy(
         configPath.pc.lib.src,
         configPath.pc.lib.dest
+    );
+    copy(
+        configPath.pc.font.src,
+        configPath.pc.font.dest
     );
 });
 
 gulp.task('copy-sp', function () {
-    copyLib(
-        configPath.sp.html.src,
-        configPath.sp.html.dest
+    copy(
+        configPath.sp.lib.src,
+        configPath.sp.lib.dest
+    );
+    copy(
+        configPath.sp.font.src,
+        configPath.sp.font.dest
     );
 });

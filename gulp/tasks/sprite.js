@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
-    spritesmith = require("gulp.spritesmith"),
     plumber = require('gulp-plumber'),
-    notify = require("gulp-notify");
+    notify = require("gulp-notify"),
+    spritesmith = require("gulp.spritesmith");
 var configPath = require('../config-path');
 
 function taskSprite(pathSrc,pathImageDest,pathStyleDest) {

@@ -12,12 +12,17 @@ module.exports = {
                 DEV_PC + '/ejs/**/*.ejs',
                 '!' + DEV_PC + '/ejs/**/_*.ejs'
             ],
-            dest: PUBLIC_PC
+            //src: DEV_PC + '/ejs/**/*.ejs',
+            dest: PUBLIC_PC,
+            hint: PUBLIC_PC + '/*.html'
         },
         style: {
             src: DEV_PC + '/sass/**/*.scss',
             dest: PUBLIC_PC + '/css',
-            lintExcluding: '!' + DEV_PC + '/sass/sprite/*.scss'
+            lintExcluding: [
+                '!' + DEV_PC + '/sass/sprite/*.scss',
+                '!' + DEV_PC + '/sass/global/*.scss'
+            ]
         },
         image:{
             src: DEV_PC + '/image/**/*',
@@ -35,6 +40,10 @@ module.exports = {
         lib:{
             src: DEV_PC + '/lib/**/*',
             dest: PUBLIC_PC + '/lib'
+        },
+        font:{
+            src: DEV_PC + '/font/**/*',
+            dest: PUBLIC_PC + '/font'
         }
     },
     sp: {
@@ -45,7 +54,9 @@ module.exports = {
                 DEV_SP + '/ejs/**/*.ejs',
                 '!' + DEV_SP + '/ejs/**/_*.ejs'
             ],
-            dest: PUBLIC_SP
+            //src: DEV_SP + '/ejs/**/*.ejs',
+            dest: PUBLIC_SP,
+            hint: PUBLIC_SP + '/*.html'
         },
         style: {
             src: DEV_SP + '/sass/**/*.scss',
@@ -59,16 +70,22 @@ module.exports = {
         sprite:{
             src: DEV_SP + '/image/sprite/src/**/*',
             destImage: DEV_SP + '/image/sprite/dest',
-            destStyle: DEV_SP + '/sass/module'
+            destStyle: DEV_SP + '/sass/sprite'
         },
         script: {
             src: DEV_SP + '/js/**/*.js',
             dest: PUBLIC_SP + '/js'
         },
         lib:{
-            src: DEV_PC + '/lib/**/*',
-            dest: PUBLIC_PC + '/lib'
+            src: DEV_SP + '/lib/**/*',
+            dest: PUBLIC_SP + '/lib'
+        },
+        font:{
+            src: DEV_SP + '/font/**/*',
+            dest: PUBLIC_SP + '/font'
         }
     },
-    spriteTemplate:'./gulp/sprite-template.mustache'
+    scsslintYml: './gulp/scss-lint.yml',
+    spriteTemplate: './gulp/sprite-template.mustache',
+    jshintrc: './gulp/js-hint.jshintrc'
 };

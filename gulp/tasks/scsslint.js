@@ -8,7 +8,7 @@ var browser = require("browser-sync");
 function taskScsslint(pathSrc) {
     return gulp.src(pathSrc)
         .pipe(plumber())
-        .pipe(scsslint({'config': './gulp/scss-lint.yml'}))
+        .pipe(scsslint({'config': configPath.scsslintYml}))
         .pipe(notify("Found file: <%= file.relative %>!"))
         .pipe(browser.reload({stream: true}));
 }
@@ -17,7 +17,8 @@ gulp.task('scsslint-pc', function () {
     taskScsslint(
         [
             configPath.pc.style.src,
-            configPath.pc.style.lintExcluding
+            configPath.pc.style.lintExcluding[0],
+            configPath.pc.style.lintExcluding[1]
         ]
     );
 });

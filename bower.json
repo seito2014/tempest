@@ -1,16 +1,14 @@
 {
-  "name": "LIG plate",
+  "name": "Seito Template",
   "version": "0.0.0",
   "authors": [
-    "堀口誠人 <horiguchi_seito@liginc.co.jp>"
+    "Horiguchi Seito"
   ],
   "license": "MIT",
   "dependencies": {
-    "jquery": "~2.1.1",
     "modernizer": "~2.8.2"
   },
   "devDependencies": {
-    "FlexSlider": "*",
-    "browser-os-hack": "*"
+    "jquery": "~2.1.3"
   }
 }

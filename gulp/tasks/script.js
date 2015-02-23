@@ -19,7 +19,7 @@ function taskScripts(pathSrc,pathDest){
     return gulp.src(configPath.pc.script.src)
         .pipe(changed(pathDest))
         .pipe(plumber())
-        .pipe(jshint())
+        .pipe(jshint(configPath.jshintrc))
         .pipe(jshint.reporter('jshint-stylish'))
         .pipe(notify("Found file: <%= file.relative %>!"))
         .pipe(gulpWebpack({
@@ -35,7 +35,7 @@ function taskScripts(pathSrc,pathDest){
                 extensions: ['', '.js', '.html'],
                 alias: {
                     bower: 'bower_components',
-                    flexslider: __dirname + '/../../bower_components/FlexSlider/jquery.flexslider.js'
+                    jquery: __dirname + '/../../bower_components/jquery/dist/jquery.js'
                 }
             },
             plugins: [

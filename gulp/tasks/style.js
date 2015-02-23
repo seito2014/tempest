@@ -13,9 +13,9 @@ var argv = require('yargs').argv;
 
 var min = !!(argv.min);
 
-function taskStyle(pathSrc,pathDest,guidePath) {
+function taskStyle(pathSrc,pathDest,pathExcluding,guidePath) {
     return gulp.src(pathSrc)
-        .pipe(changed(pathDest))
+        .pipe(changed(pathExcluding))
         .pipe(plumber())
         .pipe(notify("Found file: <%= file.relative %>!"))
         .pipe(frontnote({
@@ -47,6 +47,7 @@ gulp.task('style-pc', function () {
     taskStyle(
         configPath.pc.style.src,
         configPath.pc.style.dest,
+        configPath.pc.style.lintExcluding[0],
         '/pc'
     );
 });
@@ -55,6 +56,7 @@ gulp.task('style-sp', function () {
     taskStyle(
         configPath.sp.style.src,
         configPath.sp.style.dest,
+        configPath.sp.style.lintExcluding,
         '/sp'
     );
 });
